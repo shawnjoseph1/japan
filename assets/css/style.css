@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }  
+  :root {
+    --primary-color: rgb(255, 255, 255);
+  }
+
+  html {
+    background-image: url(../images/japan.jpg);
+    background-size: 100% 100%;
+    image-rendering: -webkit-optimize-contrast;
+  }
+  
+  header {
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+  }
+  
+  header h1 {
+    font-size: 25px;
+    color: var(--primary-color);
+    margin: 0;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  header nav {
+    margin: 7px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  header nav ul li a {
+    font-family: Optima, sans-serif;
+    padding: 10px 15px;
+    font-size: 1.0vw;
+  }
+  
+
+  header h1 {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 35px;
+    color: var(--primary-color);
+    margin: 0;
+    display: inline;
+  }
+  
+  /*End of style header*/
+
+  section {
+    padding: 60px;
+  }
+  
+  /*Beginning of hero styles*/
+  
+  .hero {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-cta {
+    text-align: center;
+    padding-top: 120px;
+    color: #fff;
+    line-height: 0.95;
+  }
+  
+  .hero-cta h2 {
+    font-family: Gill Sans, sans-serif;
+    font-size: 100px;
+    color: var(--primary-color);
+  }
+
+  .hero-cta h1 {
+    font-family: Brush Script MT;
+    text-align: left;
+    padding-left: 50px;
+    font-size: 80px;
+    color: var(--primary-color);
+  }
+
+  .hero-cta h3 {
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: var(--primary-color);
+  }
+
+  .hero-cta p {
+    font-family: Noto Sans, sans-serif;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    padding-left: 115px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .round-red {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: red;
+      border-radius: 50%;
+      margin-left: 47.8vh;
+      margin-top: 23px;
+  }
+
+  /*Beginning of hero styles*/
+
+  /*Japan bio section*/
+  
+  .trainer {
+    margin: 20px;
+    color: var(--primary-color);
+    flex: 1;
+  }
+  
+  .trainers {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .trainer-bio {
+    font-family: Noto Sans, sans-serif;
+    padding: 25px;
+    padding-left: 50px;
+    line-height: 1.4;
+  }
+  
+  
+  .trainer-bio p {
+    font-family: Noto Sans, sans-serif;
+    padding-top: 5px;
+    filter: brightness(95%);
+    font-size: 12.5px;
+  }
+  /*End Japan bio seciton*/
+  
+
+
+
+  /* MEDIA QUERY */
+  @media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+  
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+  
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+  
+    header nav ul li a {
+        font-size: 10px;
+    }
+  
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+  
+    .hero-cta, .hero-form {
+        width: 100%;
+    }
+  
+    .hero-cta {
+        text-align: center;
+    }
+  
+    .section-title {
+        width: 80%;
+    }
+  
+    .trainer {
+        flex: 0 70%;
+    }
+  } 
+
+@media screen and (max-width: 980px) {
+	.hero {
+		padding-bottom: 0;
+		justify-content: center;
+		position: relative;
+		width: 100%;
+	}
+  
+	nav {
+		display: flex;
+		width: 100%;
+		text-align: center;
+		flex-wrap: wrap;
+    	flex-direction: column;
+    	align-items: center;
+	}
+  
+	.hero nav ul {
+		margin-top: 20px;
+		width: 100%;
+		justify-content: center;
+		
+	}
+  
+	.hero nav ul li a {
+		font-size: 10px;
+		display: flex;
+		
+	}
+
+	.hero-cta {
+		text-align: center;
+	}
+
+    .hero-cta h2 {
+        font-size: 65px;
+    }
+
+    .hero-cta h1 {
+        font-size: 60px;
+        padding-top: 30px;
+    }
+
+    .hero-cta p {
+        font-size: 40px;
+    }
+
+    .round-red {
+        width: 35px;
+        height: 35px;
+        right: 130px;
+    }
+  }
+  
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    section {
+        padding: 90px 0px;
+      }
+
+    .trainers {
+        padding-top: 150px;
+    }
+
+    .round-red {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        right: 183px;
+        bottom: 100px;   
+    }
+
+    .hero-cta p {
+        position: absolute;
+        font-size: 15px;
+        right: 85px;
+
+    }
+
+    .hero-cta h3 {
+        position: absolute;
+        right: 58px;
+        top: 185px;
+    }
+
+  }
